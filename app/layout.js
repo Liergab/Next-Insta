@@ -4,6 +4,7 @@ import Sidebar from "@/components/Sidebar";
 import News from "@/components/News";
 import SessionWrapper from "@/components/SessionWrapper";
 import { Providers } from "./Provider";
+import CommentModal from "@/components/CommentModal";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,11 +28,12 @@ export default function RootLayout({ children }) {
               {children}
             </div>
             <div className="lg:flex-col p-3 sticky top-0 h-screen border-l-2 border-slate-200 dark:border-slate-600  hidden lg:flex w-[24rem]">
-              <div className="sticky top-0 dark:bg-black bg-white py-2">
+              <div className="sticky top-0 py-2">
                 <input type="test" placeholder="Search" className="bg-gray-100 border border-gray-200 rounded-3xl test-sm w-full px-4 py-2"/>
               </div>
               <News/>
             </div>
+            <CommentModal/>
           </div>
         </Providers>
       </body>
