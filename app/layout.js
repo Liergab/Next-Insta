@@ -4,6 +4,7 @@ import Sidebar from "@/components/Sidebar";
 import News from "@/components/News";
 import SessionWrapper from "@/components/SessionWrapper";
 import { Providers } from "./Provider";
+import CommentModal from "@/components/CommentModal";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,18 +21,19 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <div className="flex justify-between max-w-7xl mx-auto">
-            <div className="sticky top-0 hidden sm:inline border-r-2 border-slate-200 dark:border-slate-600 h-screen">
+            <div className="sticky top-0 hidden sm:inline border-r-2 border-slate-200 dark:border-zinc-900 h-screen">
               <Sidebar/>
             </div>
             <div className="w-2xl flex-1">
               {children}
             </div>
-            <div className="lg:flex-col p-3 sticky top-0 h-screen border-l-2 border-slate-200 dark:border-slate-600  hidden lg:flex w-[24rem]">
-              <div className="sticky top-0 dark:bg-black bg-white py-2">
-                <input type="test" placeholder="Search" className="bg-gray-100 border border-gray-200 rounded-3xl test-sm w-full px-4 py-2"/>
+            <div className="lg:flex-col p-3 sticky top-0 h-screen border-l-2 border-slate-200 dark:border-zinc-900  hidden lg:flex w-[24rem]">
+              <div className="sticky top-0 py-2">
+                <input type="test" placeholder="Search" className="bg-gray-100 border border-gray-200 dark:border-zinc-900 rounded-3xl test-sm w-full px-4 py-2"/>
               </div>
               <News/>
             </div>
+            <CommentModal/>
           </div>
         </Providers>
       </body>

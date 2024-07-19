@@ -7,7 +7,7 @@ import Icon from './Icon'
 
 const Post = ({post, id}) => {
   return (
-    <div className='flex  p-3  border-b border-gray-200'>
+    <div className='flex  p-3  border-b border-gray-200 dark:border-zinc-900'>
       <img src={post?.profileImage} alt="post-image" className='rounded-full w-12 h-12 mr-4' />
       <div className='flex-1'>
         <div className=' flex items-center justify-between'>
