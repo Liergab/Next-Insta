@@ -15,7 +15,7 @@ const PostPage = async({params}) => {
 
   return (
     <div className='w-full  mx-auto  border-r border-l min-h-screen'>
-      <div className='flex items-center justify-between space-x-2  py-2 px-3 sticky top-0 z-50 dark:bg-black bg-white border-b border-gray-200'>
+      <div className='flex items-center justify-between space-x-2  py-2 px-3 sticky top-0 z-50 dark:bg-zinc-900 bg-white border-b border-gray-200'>
         <div className='flex items-center'>
           <Link href="/" className='hover:bg-gray-200 p-2 rounded-full'>
           <HiArrowLeft className='h-5 w-5'/>

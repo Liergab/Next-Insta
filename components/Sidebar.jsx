@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 const Sidebar = () => {
   const{data:session} = useSession()
-  console.log(session)
+
   return (
     <section className='flex flex-col justify-between h-screen gap-4 p-3'>
       <div className='flex flex-col justify-between items-center  gap-4 p-3'>

@@ -81,9 +81,9 @@ const Input = () => {
   if (!session) return null;
 
   return (
-    <div className='flex border-b border-gray-200 w-full p-4 space-x-3'>
+    <div className='flex border-b border-gray-200 dark:border-zinc-900 w-full p-4 space-x-3'>
       <img src={session?.user?.image} alt="img" className='w-11 h-11 cursor-pointer rounded-full' />
-      <div className='w-full divide-y divide-gray-200'>
+      <div className='w-full divide-y divide-gray-200 dark:divide-zinc-900'>
         <textarea className='w-full border-none outline-none tracking-wide min-h-[50px] text-gray-700'
           placeholder='Whats Happening' rows="2"
           onChange={(e) => setText(e.target.value)}
